@@ -10,7 +10,7 @@ MY_TWILIO_NUMBER = config("MY_TWILIO_NUMBER")
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
 call = client.calls.create(
-    url='http://demo.twilio.com/docs/voice.xml',
+    twiml="<Response><Say>What's up, Bro?</Say></Response>",
     to=MY_PHONE_NUMBER,
     from_=MY_TWILIO_NUMBER
 )
