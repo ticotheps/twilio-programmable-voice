@@ -12,10 +12,9 @@ MY_TWILIO_NUMBER = config("MY_TWILIO_NUMBER")
 
 client = Client(TEST_ACCOUNT_SID, TEST_AUTH_TOKEN)
 
-call = client.calls.create(
-    url='http://demo.twilio.com/docs/voice.xml',
-    to=MY_PHONE_NUMBER,
-    from_=MY_TWILIO_NUMBER
-)
+message = client.messages.create(
+    to=MY_PHONE_NUMBER, 
+    from_=MY_TEST_NUMBER,
+    body="Hello from Tico's MacBook Pro!")
 
-print(call.sid)
+print(message.sid)
