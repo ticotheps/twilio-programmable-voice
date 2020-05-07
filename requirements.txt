@@ -1,7 +1,9 @@
 certifi==2020.4.5.1
 chardet==3.0.4
+click==7.1.2
 idna==2.9
 pip-save==0.2.0
+pip-tools==5.1.2
 PyJWT==1.7.1
 pytz==2020.1
 requests==2.23.0
